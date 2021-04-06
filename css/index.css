@@ -1,0 +1,35 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+#top-bar {
+  width: 100%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+.barra img {
+  width: 30%;
+}
+
+
+.searchbar {
+  margin: 15px;
+  size: 50;
+  font-size: 20px;
+  padding: 12px 70px;
+}
+
+.red-soc {
+  width: 5%;
+}
+
+.red-soc img {
+  width: 30%;
+  display: inline;
+}
