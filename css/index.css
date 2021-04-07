@@ -6,7 +6,6 @@
 
 #top-bar {
   width: 100%;
-  border: 2px solid black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,6 +14,11 @@
 
 .barra img {
   width: 30%;
+}
+
+.barra input {
+  border-radius: 8px;
+  
 }
 
 
@@ -32,4 +36,10 @@
 .red-soc img {
   width: 30%;
   display: inline;
+}
+
+.children  {
+  display: list-item;
+  list-style-type: none;
+  margin: 0px 20px;
 }
