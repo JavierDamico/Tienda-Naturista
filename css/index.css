@@ -9,16 +9,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgb(192, 245, 86);
  
 }
 
 .barra img {
-  width: 30%;
+  width: 20%;
 }
 
 .barra input {
   border-radius: 8px;
   
+}
+
+.carrito img {
+  width: 10%;
 }
 
 
@@ -34,7 +39,7 @@
 }
 
 .red-soc img {
-  width: 30%;
+  width: 38%;
   display: inline;
 }
 
