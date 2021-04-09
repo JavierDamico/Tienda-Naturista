@@ -74,6 +74,42 @@ a:visited
   margin: 0px 20px;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 12px;  
+}
+
+.hamburger {
+  background: #47DA54;
+  color: white;
+  text-align: left;
+  width: 30%;
+  }
+
+  
+.hamburger span {
+  font-size: 24px;
+}
+
+.boton-hamb {
+  display: flex;
+  align-items: center;
+}
+
+.categorias {
+  color: white  ;
+}
+
+  
+.children a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  list-style: none;
+}
+
 
 .banner {
   text-align: center;
