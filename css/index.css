@@ -34,13 +34,13 @@ a:visited
   padding: 24px;
 }
 
-.barra {
+/* .barra {
   width: 40%;
-}
+} */
 
 .barra input {
-  border-radius: 8px;
-  
+  border-radius: 50px;
+  border: none;
 }
 
 .carrito {
@@ -211,6 +211,16 @@ nav {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 48px;
+  
+}
+
+.prod-destacado {
+  text-align: center;
+  margin:12px;
+}
+
+.prod-destacado img {
+  box-shadow: gray 3px 3px 3px;
 }
 
 hr {
