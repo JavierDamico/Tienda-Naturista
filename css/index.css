@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
@@ -76,29 +77,77 @@ a:visited
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
-  margin-bottom: 12px;  
+  margin-bottom: 12px;
+  background-color: #47DA54;
 }
 
+
 .hamburger {
+  display: flex;
   background: #47DA54;
   color: white;
   text-align: left;
   width: 30%;
   }
 
-  
-.hamburger span {
-  font-size: 24px;
+.hamburger li {
+  list-style: none;
 }
+
 
 .boton-hamb {
   display: flex;
   align-items: center;
 }
 
-.categorias {
+.categorias img {
+  width: 36px;
+  padding: 0px 6px;
+}
+
+.categorias li {
+  position: relative;
+}
+
+.categorias ul {
+  display: none;
+  position: relative;
+  background: #47DA54;
+  height: auto;
+}
+
+.categorias li:hover ul {
+  display: flex;
+  flex-flow: column wrap;
+  position: absolute;
+  top: 100%; left: 0;
+}
+
+.categorias li:hover ul ul {
+  display: none;
+}
+
+.categorias li ul li ul {
+  display: none;
+  height: auto;
+  background: #47DA54;
+}
+
+.nav-sections li {
+  display: inline-block;
+  color: white;
+  padding: 12px 6px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.nav-sections a {
+  color: white;
+}
+
+.categorias a {
   color: white  ;
 }
 
@@ -107,7 +156,6 @@ nav {
   display: block;
   padding: 8px 16px;
   text-decoration: none;
-  list-style: none;
 }
 
 
@@ -158,6 +206,20 @@ nav {
 
 }
 
+.destacados {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 48px;
+}
+
+hr {
+  height: 1px;
+  background: lightgray;
+  border: none;
+  margin: 0px 100px;
+}
+
 .aside-box {
   padding: 5px;
 }
@@ -196,6 +258,7 @@ nav {
 .list-enlaces {
   list-style-type: none;
 }
+
 
 .redes-sociales h3 {
 color: #47DA54;
