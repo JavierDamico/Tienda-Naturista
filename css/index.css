@@ -34,10 +34,6 @@ a:visited
   padding: 24px;
 }
 
-/* .barra {
-  width: 40%;
-} */
-
 .barra input {
   border-radius: 50px;
   border: none;
@@ -59,105 +55,6 @@ a:visited
   font-size: 20px;
   padding: 12px 70px;
 }
-
-.red-soc {
-  width: 5%;
-}
-
-.red-soc img {
-  width: 38%;
-  display: inline;
-}
-
-.children  {
-  display: list-item;
-  list-style-type: none;
-  margin: 0px 20px;
-}
-
-nav {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin-bottom: 12px;
-  background-color: #47DA54;
-}
-
-
-.hamburger {
-  display: flex;
-  background: #47DA54;
-  color: white;
-  text-align: left;
-  width: 30%;
-  }
-
-.hamburger li {
-  list-style: none;
-}
-
-
-.boton-hamb {
-  display: flex;
-  align-items: center;
-}
-
-.categorias img {
-  width: 36px;
-  padding: 0px 6px;
-}
-
-.categorias li {
-  position: relative;
-}
-
-.categorias ul {
-  display: none;
-  position: relative;
-  background: #47DA54;
-  height: auto;
-}
-
-.categorias li:hover ul {
-  display: flex;
-  flex-flow: column wrap;
-  position: absolute;
-  top: 100%; left: 0;
-}
-
-.categorias li:hover ul ul {
-  display: none;
-}
-
-.categorias li ul li ul {
-  display: none;
-  height: auto;
-  background: #47DA54;
-}
-
-.nav-sections li {
-  display: inline-block;
-  color: white;
-  padding: 12px 6px;
-  font-size: 24px;
-  font-weight: 500;
-}
-
-.nav-sections a {
-  color: white;
-}
-
-.categorias a {
-  color: white  ;
-}
-
-  
-.children a {
-  display: block;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
 
 .banner {
   text-align: center;
@@ -187,6 +84,74 @@ nav {
   border-radius: 10px;
   margin-bottom: 64px;
   color: white;
+}
+
+
+/*comienzo barra menu*/
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+  background-color: #47DA54;
+  font-size: 24px;
+  
+}
+
+.contenedor a {
+  color: white;
+  background-color: #47DA54;
+}
+
+.contenedor li {
+    background-color: #47DA54;
+
+}
+
+ul.menu > li {
+       display: inline-block;
+       position: relative;
+    }
+
+ul.menu li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+ul.menu a {
+  text-decoration: none;
+}
+
+ul.sub-menu a{
+  font-size: 16px;
+}
+
+
+ul.sub-menu{
+    display: none;
+ }
+
+ul.menu > li:hover ul.sub-menu{
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+}
+
+ul.sub-menu{
+       left: 0;
+       position: absolute
+}
+
+ul.sub-menu-2 {
+  display: none;
+}
+
+ul.sub-menu > li:hover ul.sub-menu-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+ul.sub-menu-2 {
+  
+  position: relative;
 }
 
 .beneficios {
