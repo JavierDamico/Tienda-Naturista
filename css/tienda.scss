@@ -1,0 +1,262 @@
+$font-stack: 'Poppins', sans-serif; 
+$brand-color: #47DA54;
+$logo-font: 'Lobster', cursive;
+
+body {
+    font: 100% $font-stack;
+    
+    a {
+        color: black;
+        text-decoration: none;
+      }
+
+      a:visited 
+      {
+          text-decoration: none; 
+      }
+
+      li {
+        list-style: none;
+    }
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#top-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #47DA54;
+ 
+  .logo  {
+    font-family: 'Lobster', cursive;
+    font-size: 70px;
+    color: white;
+    padding: 24px;
+  }
+  
+  .barra input {
+    border-radius: 50px;
+    border: none;
+  }
+  
+  .carrito {
+    width: 15%;
+
+    img {
+        width: 150%;
+      }
+  
+  }
+  
+   
+  .searchbar {
+    margin: 15px;
+    size: 50;
+    font-size: 20px;
+    padding: 12px 70px;
+  }
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    background-color: #47DA54;
+    font-size: 24px;
+    
+  }
+  
+  .contenedor {
+    a {
+        color: white;
+        background-color: #47DA54;
+  }
+  
+    li {
+      background-color: #47DA54;
+    }
+
+
+    ul.menu > li {
+            display: inline-block;
+            position: relative;
+        }
+    
+    ul.menu li {
+        list-style-type: none;
+        padding: 5px;
+    }
+    
+    ul.menu a {
+        text-decoration: none;
+    }
+    
+    ul.sub-menu a{
+        font-size: 16px;
+    }
+    
+    
+    ul.sub-menu{
+        display: none;
+    }
+    
+    ul.menu > li:hover ul.sub-menu{
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+    }
+    
+    ul.sub-menu{
+        left: 0;
+        position: absolute
+
+    }
+    
+    ul.sub-menu-2 {
+        display: none;
+    }
+    
+    ul.sub-menu > li:hover ul.sub-menu-2 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    ul.sub-menu-2 {
+        
+        position: relative;
+    }
+}
+
+.banner {
+    text-align: center;
+    background-image: url(../img/granos_varios_rec.jpg);
+    color: white;
+    padding: 120px;
+    background-size: cover;
+  
+  
+  .titulo-boton {
+    display: flex;
+    width: 100%;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+  }
+  
+   h1 {
+    font-size: 60px;
+    font-weight: 900;
+    margin: 64px;
+  }
+  .boton-comprar {
+    background: #47DA54;
+    padding: 12px 36px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 64px;
+    color: white;
+  }
+}
+
+.tienda-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 12px;
+    width: 100%;
+    margin-top: 24px;
+    
+
+    .select-cat {
+        
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .tarj-prod {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width:70%
+
+            
+    }
+
+    .items {
+        text-align: center;
+        margin:12px;
+
+        .nombre,
+        .precio {
+            display: block;
+        }
+
+        .precio {
+            color: $brand-color;
+            font-weight: 600;
+            font-size: 20px;
+        }
+    }
+}
+
+    hr {
+        height: 1px;
+        background: lightgray;
+        border: none;
+        margin: 0px 100px;
+    }
+  
+    
+  .footer-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    padding: 24px;
+
+    .left-footer {
+        width: 240px;
+        padding: 24px;
+      }
+      
+      .delivery {
+        width: 100%;
+      }
+      
+      .central-footer {
+        width: auto;
+        padding: 24px;
+      }
+      
+      .right-footer {
+        padding: 24px;
+        width: auto;
+      }
+      
+      .list-enlaces {
+        list-style-type: none;
+      }
+      
+      
+      .redes-sociales h3,
+      .list-enlaces h3,
+      .info-links h3 {
+      color: $brand-color;
+      }
+      
+  }
+  
+  
+  .footer-bottom {
+    background: $brand-color;
+    padding: 12px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+  }

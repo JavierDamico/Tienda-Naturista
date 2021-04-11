@@ -1,0 +1,207 @@
+body {
+  font: 100% "Poppins", sans-serif;
+}
+body a {
+  color: black;
+  text-decoration: none;
+}
+body a:visited {
+  text-decoration: none;
+}
+body li {
+  list-style: none;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#top-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #47DA54;
+}
+#top-bar .logo {
+  font-family: "Lobster", cursive;
+  font-size: 70px;
+  color: white;
+  padding: 24px;
+}
+#top-bar .barra input {
+  border-radius: 50px;
+  border: none;
+}
+#top-bar .carrito {
+  width: 15%;
+}
+#top-bar .carrito img {
+  width: 150%;
+}
+#top-bar .searchbar {
+  margin: 15px;
+  size: 50;
+  font-size: 20px;
+  padding: 12px 70px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+  background-color: #47DA54;
+  font-size: 24px;
+}
+
+.contenedor a {
+  color: white;
+  background-color: #47DA54;
+}
+.contenedor li {
+  background-color: #47DA54;
+}
+.contenedor ul.menu > li {
+  display: inline-block;
+  position: relative;
+}
+.contenedor ul.menu li {
+  list-style-type: none;
+  padding: 5px;
+}
+.contenedor ul.menu a {
+  text-decoration: none;
+}
+.contenedor ul.sub-menu a {
+  font-size: 16px;
+}
+.contenedor ul.sub-menu {
+  display: none;
+}
+.contenedor ul.menu > li:hover ul.sub-menu {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+.contenedor ul.sub-menu {
+  left: 0;
+  position: absolute;
+}
+.contenedor ul.sub-menu-2 {
+  display: none;
+}
+.contenedor ul.sub-menu > li:hover ul.sub-menu-2 {
+  display: flex;
+  flex-direction: column;
+}
+.contenedor ul.sub-menu-2 {
+  position: relative;
+}
+
+.banner {
+  text-align: center;
+  background-image: url(../img/granos_varios_rec.jpg);
+  color: white;
+  padding: 120px;
+  background-size: cover;
+}
+.banner .titulo-boton {
+  display: flex;
+  width: 100%;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+}
+.banner h1 {
+  font-size: 60px;
+  font-weight: 900;
+  margin: 64px;
+}
+.banner .boton-comprar {
+  background: #47DA54;
+  padding: 12px 36px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 64px;
+  color: white;
+}
+
+.tienda-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 12px;
+  width: 100%;
+  margin-top: 24px;
+}
+.tienda-box .select-cat a {
+  text-decoration: none;
+}
+.tienda-box .tarj-prod {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 70%;
+}
+.tienda-box .items {
+  text-align: center;
+  margin: 12px;
+}
+.tienda-box .items .nombre,
+.tienda-box .items .precio {
+  display: block;
+}
+.tienda-box .items .precio {
+  color: #47DA54;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+hr {
+  height: 1px;
+  background: lightgray;
+  border: none;
+  margin: 0px 100px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  padding: 24px;
+}
+.footer-links .left-footer {
+  width: 240px;
+  padding: 24px;
+}
+.footer-links .delivery {
+  width: 100%;
+}
+.footer-links .central-footer {
+  width: auto;
+  padding: 24px;
+}
+.footer-links .right-footer {
+  padding: 24px;
+  width: auto;
+}
+.footer-links .list-enlaces {
+  list-style-type: none;
+}
+.footer-links .redes-sociales h3,
+.footer-links .list-enlaces h3,
+.footer-links .info-links h3 {
+  color: #47DA54;
+}
+
+.footer-bottom {
+  background: #47DA54;
+  padding: 12px;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=tienda.css.map */
