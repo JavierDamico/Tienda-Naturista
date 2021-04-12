@@ -118,6 +118,13 @@ ul.menu li {
 
 ul.menu a {
   text-decoration: none;
+  border: 1px solid #47DA54;
+}
+
+.contenedor ul.menu a:hover {
+  background: #3FBF3F;
+  border: 1px solid #3FBF3F;
+  border-radius: 3px;
 }
 
 ul.sub-menu a{
@@ -150,8 +157,11 @@ ul.sub-menu > li:hover ul.sub-menu-2 {
 }
 
 ul.sub-menu-2 {
-  
   position: relative;
+}
+
+ul.sub-menu-2 a {
+  font-size: 14px;
 }
 
 .beneficios {
@@ -249,4 +259,15 @@ color: #47DA54;
   text-align: center;
   color: white;
   font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+
+  .barra input {
+    display: none;
+  }
+  
+  .contenedor {
+    font-size: 20px;
+  }
 }

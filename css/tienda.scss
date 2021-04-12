@@ -104,13 +104,14 @@ body {
       border-radius: 3px;
     }
     
-    ul.sub-menu a{
-        font-size: 16px;
-    }
-    
-    
     ul.sub-menu{
         display: none;
+        position: absolute;
+        left: 0;
+
+        a{
+          font-size: 16px;
+      }
     }
     
     ul.menu > li:hover ul.sub-menu{
@@ -119,14 +120,14 @@ body {
         min-width: 300px;
     }
     
-    ul.sub-menu{
-        left: 0;
-        position: absolute
-
-    }
     
     ul.sub-menu-2 {
         display: none;
+        position: relative;
+
+        a {
+          font-size: 14px;
+        }
     }
     
     ul.sub-menu > li:hover ul.sub-menu-2 {
@@ -134,10 +135,6 @@ body {
         flex-direction: column;
     }
     
-    ul.sub-menu-2 {
-        
-        position: relative;
-    }
 }
 
 .banner {
@@ -268,3 +265,26 @@ body {
     color: white;
     font-weight: 500;
   }
+
+  @media screen and (max-width: 768px) {
+
+    .barra input {
+      display: none;
+    }
+    
+    .contenedor {
+      font-size: 20px;
+    }
+
+    .banner {
+      padding: 0px;
+    }
+
+    .tienda-box{
+
+      .tarj-prod {
+        width: 60%;
+      }
+    }
+  }
+
