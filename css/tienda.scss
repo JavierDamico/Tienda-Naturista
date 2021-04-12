@@ -1,5 +1,6 @@
 $font-stack: 'Poppins', sans-serif; 
 $brand-color: #47DA54;
+$secondary-color: #3FBF3F;
 $logo-font: 'Lobster', cursive;
 
 body {
@@ -82,18 +83,25 @@ body {
     }
 
 
+
     ul.menu > li {
             display: inline-block;
             position: relative;
-        }
-    
-    ul.menu li {
-        list-style-type: none;
-        padding: 5px;
+            list-style-type: none;
+            padding: 5px; 
     }
+
     
+
     ul.menu a {
         text-decoration: none;
+        border: 1px solid $brand-color;
+    }
+
+    ul.menu a:hover {
+      background: $secondary-color;
+      border: 1px solid $secondary-color;
+      border-radius: 3px;
     }
     
     ul.sub-menu a{
