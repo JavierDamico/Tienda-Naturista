@@ -34,9 +34,16 @@ body li {
 #top-bar .logo a {
   color: white;
 }
+#top-bar .barra {
+  width: 45%;
+}
 #top-bar .barra input {
   border-radius: 50px;
   border: none;
+  width: 90%;
+}
+#top-bar .barra form {
+  width: 100%;
 }
 #top-bar .carrito {
   width: 15%;
@@ -46,16 +53,21 @@ body li {
 }
 #top-bar .searchbar {
   margin: 15px;
-  size: 50;
-  font-size: 20px;
-  padding: 12px 70px;
+  font-size: 18px;
+  padding: 12px;
+}
+#top-bar button {
+  margin: -60px;
+  border: none;
+  background: white;
+  font-size: 1.5em;
 }
 
 .contenedor {
   display: flex;
   justify-content: space-around;
   background-color: #47DA54;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .contenedor a {
@@ -74,7 +86,7 @@ body li {
 }
 .contenedor .menu > li > a {
   display: block;
-  padding: 15px 20px;
+  padding: 6px 12px;
   text-decoration: none;
 }
 .contenedor .menu a:hover {
@@ -89,7 +101,7 @@ body li {
   left: 10px;
 }
 .contenedor .submenu a {
-  font-size: 18px;
+  font-size: 16px;
 }
 .contenedor .submenu li a {
   display: block;
@@ -138,6 +150,9 @@ body li {
 }
 .tienda-box .select-cat a {
   text-decoration: none;
+}
+.tienda-box .select-cat h3 {
+  color: #47DA54;
 }
 .tienda-box .tarj-prod {
   display: flex;
@@ -207,6 +222,10 @@ hr {
 
 @media screen and (max-width: 768px) {
   .barra input {
+    display: none;
+  }
+
+  .barra button {
     display: none;
   }
 

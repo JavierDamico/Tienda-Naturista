@@ -38,9 +38,13 @@ a:visited
   color: white;
 }
 
+.barra {
+  width: 45%;
+}
 .barra input {
   border-radius: 50px;
   border: none;
+  width: 90%;
 }
 
 .carrito {
@@ -56,8 +60,19 @@ a:visited
 .searchbar {
   margin: 15px;
   size: 50;
-  font-size: 20px;
-  padding: 12px 70px;
+  font-size: 18px;
+  padding: 12px;
+}
+
+.barra button {
+  margin: -60px;
+  border: none;
+  background: white;
+  font-size: 1.5em;
+}
+
+.barra form {
+  width: 100%;
 }
 
 .banner {
@@ -96,7 +111,7 @@ a:visited
   display: flex;
   justify-content: space-around;
   background-color: #47DA54;
-  font-size: 24px;
+  font-size: 22px;
   
 }
 
@@ -126,7 +141,7 @@ a:visited
 }
 .contenedor .menu > li > a {
   display: block;
-  padding: 6px 15px;
+  padding: 6px 12px;
   text-decoration: none;
 }
 .contenedor .submenu {
