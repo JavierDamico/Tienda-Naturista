@@ -27,11 +27,15 @@ a:visited
  
 }
 
-.logo  {
+#top-bar .logo  {
   font-family: 'Lobster', cursive;
   font-size: 70px;
   color: white;
   padding: 24px;
+}
+
+#top-bar .logo a {
+  color: white;
 }
 
 .barra input {
@@ -106,62 +110,47 @@ a:visited
 
 }
 
-ul.menu > li {
-       display: inline-block;
-       position: relative;
-    }
-
-ul.menu li {
-  list-style-type: none;
-  padding: 5px;
+.contenedor a {
+  color: white;
+  background-color: #47DA54;
 }
-
-ul.menu a {
-  text-decoration: none;
-  border: 1px solid #47DA54;
+.contenedor li {
+  background-color: #47DA54;
 }
-
-.contenedor ul.menu a:hover {
-  background: #3FBF3F;
-  border: 1px solid #3FBF3F;
-  border-radius: 3px;
+.contenedor .navegacion ul {
+  list-style: none;
 }
-
-ul.sub-menu a{
-  font-size: 16px;
-}
-
-
-ul.sub-menu{
-    display: none;
- }
-
-ul.menu > li:hover ul.sub-menu{
-    display: flex;
-    flex-direction: column;
-    min-width: 300px;
-}
-
-ul.sub-menu{
-       left: 0;
-       position: absolute
-}
-
-ul.sub-menu-2 {
-  display: none;
-}
-
-ul.sub-menu > li:hover ul.sub-menu-2 {
-  display: flex;
-  flex-direction: column;
-}
-
-ul.sub-menu-2 {
+.contenedor .menu > li {
   position: relative;
+  display: inline-block;
+}
+.contenedor .menu > li > a {
+  display: block;
+  padding: 6px 15px;
+  text-decoration: none;
+}
+.contenedor .submenu {
+  position: absolute;
+  width: 180%;
+  display: none;
+  left: 10px;
+}
+.contenedor .submenu a {
+  font-size: 18px;
+}
+.contenedor .submenu li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+.contenedor .menu li:hover .submenu {
+  display: block;
 }
 
-ul.sub-menu-2 a {
-  font-size: 14px;
+.menu a:hover {
+  background-color: #3FBF3F;
+  border-radius: 50px;
+  transition: all .3s;
 }
 
 .beneficios {
