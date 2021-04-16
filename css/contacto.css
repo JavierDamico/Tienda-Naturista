@@ -118,10 +118,11 @@ body li {
 
 .contact {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding-top: 24px;
 }
 .contact .contact-items {
-  width: 30%;
+  width: 20%;
   line-height: 1.5em;
 }
 .contact .contact-items p {
@@ -132,7 +133,7 @@ body li {
   margin-left: 12px;
 }
 .contact .form-block {
-  width: 60%;
+  width: 40%;
 }
 .contact .form-block input {
   width: 95%;
