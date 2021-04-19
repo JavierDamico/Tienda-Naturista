@@ -1,2 +1,0 @@
-* Agregar media querys para mobile
-* Terminar de definir menu Categorias
