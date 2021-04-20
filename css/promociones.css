@@ -23,7 +23,7 @@ body li {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #47DA54;
+  background-color: #47da54;
 }
 #top-bar .logo {
   font-family: "Lobster", cursive;
@@ -66,16 +66,16 @@ body li {
 .contenedor {
   display: flex;
   justify-content: space-around;
-  background-color: #47DA54;
+  background-color: #47da54;
   font-size: 22px;
 }
 
 .contenedor a {
   color: white;
-  background-color: #47DA54;
+  background-color: #47da54;
 }
 .contenedor li {
-  background-color: #47DA54;
+  background-color: #47da54;
 }
 .contenedor .navegacion ul {
   list-style: none;
@@ -90,7 +90,7 @@ body li {
   text-decoration: none;
 }
 .contenedor .menu a:hover {
-  background-color: #3FBF3F;
+  background-color: #3fbf3f;
   border-radius: 50px;
   transition: all 0.3s;
 }
@@ -132,7 +132,7 @@ body li {
   margin: 64px;
 }
 .banner .boton-comprar {
-  background: #47DA54;
+  background: #47da54;
   padding: 12px 36px;
   border: none;
   border-radius: 10px;
@@ -152,13 +152,13 @@ body li {
   text-decoration: none;
 }
 .tienda-box .select-cat h3 {
-  color: #47DA54;
+  color: #47da54;
 }
 .tienda-box .tarj-prod {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 70%;
+  width: 100%;
 }
 .tienda-box .items {
   text-align: center;
@@ -169,7 +169,7 @@ body li {
   display: block;
 }
 .tienda-box .items .precio {
-  color: #47DA54;
+  color: #47da54;
   font-weight: 600;
   font-size: 20px;
 }
@@ -209,11 +209,11 @@ hr {
 .footer-links .redes-sociales h3,
 .footer-links .list-enlaces h3,
 .footer-links .info-links h3 {
-  color: #47DA54;
+  color: #47da54;
 }
 
 .footer-bottom {
-  background: #47DA54;
+  background: #47da54;
   padding: 12px;
   text-align: center;
   color: white;

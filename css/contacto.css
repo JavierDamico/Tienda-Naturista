@@ -23,7 +23,7 @@ body li {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #47DA54;
+  background-color: #47da54;
 }
 #top-bar .logo {
   font-family: "Lobster", cursive;
@@ -66,15 +66,15 @@ body li {
 .contenedor {
   display: flex;
   justify-content: space-around;
-  background-color: #47DA54;
+  background-color: #47da54;
   font-size: 22px;
 }
 .contenedor a {
   color: white;
-  background-color: #47DA54;
+  background-color: #47da54;
 }
 .contenedor li {
-  background-color: #47DA54;
+  background-color: #47da54;
 }
 .contenedor .navegacion ul {
   list-style: none;
@@ -89,7 +89,7 @@ body li {
   text-decoration: none;
 }
 .contenedor .menu a:hover {
-  background-color: #3FBF3F;
+  background-color: #3fbf3f;
   border-radius: 50px;
   transition: all 0.3s;
 }
@@ -112,7 +112,7 @@ body li {
 }
 
 .gral-contact h1 {
-  color: #47DA54;
+  color: #47da54;
   margin: 12px;
 }
 
@@ -138,14 +138,18 @@ body li {
 .contact .form-block input {
   width: 95%;
   margin-bottom: 6px;
+  padding: 5px;
+  font-size: 16px;
 }
 .contact .form-block textarea {
   width: 95%;
   margin-bottom: 6px;
+  padding: 5px;
+  font-size: 16px;
 }
 .contact .form-block button {
   width: 95%;
-  background: #47DA54;
+  background: #47da54;
   padding: 5px;
   border: none;
   border-radius: 50px;
@@ -191,11 +195,11 @@ hr {
 .footer-links .redes-sociales h3,
 .footer-links .list-enlaces h3,
 .footer-links .info-links h3 {
-  color: #47DA54;
+  color: #47da54;
 }
 
 .footer-bottom {
-  background: #47DA54;
+  background: #47da54;
   padding: 12px;
   text-align: center;
   color: white;

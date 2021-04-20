@@ -1,30 +1,29 @@
-$font-stack: 'Poppins', sans-serif; 
-$brand-color: #47DA54;
-$secondary-color: #3FBF3F;
-$logo-font: 'Lobster', cursive;
+$font-stack: "Poppins", sans-serif;
+$brand-color: #47da54;
+$secondary-color: #3fbf3f;
+$logo-font: "Lobster", cursive;
 
 body {
-    font: 100% $font-stack;
-    
-    a {
-        color: black;
-        text-decoration: none;
-      }
+  font: 100% $font-stack;
 
-      a:visited 
-      {
-          text-decoration: none; 
-      }
+  a {
+    color: black;
+    text-decoration: none;
+  }
 
-      li {
-        list-style: none;
-    }
+  a:visited {
+    text-decoration: none;
+  }
+
+  li {
+    list-style: none;
+  }
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 #top-bar {
@@ -32,10 +31,10 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #47DA54;
- 
-  .logo  {
-    font-family: 'Lobster', cursive;
+  background-color: #47da54;
+
+  .logo {
+    font-family: "Lobster", cursive;
     font-size: 70px;
     color: white;
     padding: 24px;
@@ -57,21 +56,16 @@ body {
     form {
       width: 100%;
     }
-
   }
-  
- 
-  
+
   .carrito {
     width: 15%;
 
     img {
-        width: 150%;
-      }
-  
+      width: 150%;
+    }
   }
-  
-   
+
   .searchbar {
     margin: 15px;
     font-size: 18px;
@@ -87,80 +81,72 @@ body {
 }
 
 .contenedor {
-    display: flex;
-    justify-content: space-around;
-    background-color: #47DA54;
-    font-size: 22px;
-    
+  display: flex;
+  justify-content: space-around;
+  background-color: #47da54;
+  font-size: 22px;
+}
+
+.contenedor {
+  a {
+    color: white;
+    background-color: #47da54;
   }
-  
-  .contenedor {
-    a {
-        color: white;
-        background-color: #47DA54;
+
+  li {
+    background-color: #47da54;
   }
-  
-    li {
-      background-color: #47DA54;
-    }
 
-    
-    .navegacion ul {
-      list-style: none;
-    }
-    
-    .menu > li {
-      position: relative;
-      display: inline-block;
-    }
-    
-    .menu > li > a {
-      display: block;
-      padding: 6px 12px;
-      text-decoration: none;
-    }
+  .navegacion ul {
+    list-style: none;
+  }
 
-    .menu a:hover {
-      background-color: #3FBF3F;
-      border-radius: 50px;
-      transition: all .3s;
-    }
-    
-        
-    .submenu {
-      position: absolute;
-      width: 180%;
-      display: none;
-      left: 10px;
-    }
+  .menu > li {
+    position: relative;
+    display: inline-block;
+  }
 
-    .submenu a {
-      font-size: 16px;
-    }
-    
-    .submenu li a {
-      display: block;
-      padding: 15px;
-      text-decoration: none;
-      
-    }
-    
-    .menu li:hover .submenu {
-      display: block;
-    }
-    
+  .menu > li > a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
 
-      
+  .menu a:hover {
+    background-color: #3fbf3f;
+    border-radius: 50px;
+    transition: all 0.3s;
+  }
+
+  .submenu {
+    position: absolute;
+    width: 180%;
+    display: none;
+    left: 10px;
+  }
+
+  .submenu a {
+    font-size: 16px;
+  }
+
+  .submenu li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+  }
+
+  .menu li:hover .submenu {
+    display: block;
+  }
 }
 
 .banner {
-    text-align: center;
-    background-image: url(../img/granos_varios_rec.jpg);
-    color: white;
-    padding: 120px;
-    background-size: cover;
-  
-  
+  text-align: center;
+  background-image: url(../img/granos_varios_rec.jpg);
+  color: white;
+  padding: 120px;
+  background-size: cover;
+
   .titulo-boton {
     display: flex;
     width: 100%;
@@ -168,14 +154,14 @@ body {
     justify-content: center;
     align-content: center;
   }
-  
-   h1 {
+
+  h1 {
     font-size: 60px;
     font-weight: 900;
     margin: 64px;
   }
   .boton-comprar {
-    background: #47DA54;
+    background: #47da54;
     padding: 12px 36px;
     border: none;
     border-radius: 10px;
@@ -183,132 +169,120 @@ body {
     color: white;
   }
 }
-
 .tienda-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 12px;
+  width: 100%;
+  margin-top: 24px;
+
+  .select-cat {
+    a {
+      text-decoration: none;
+    }
+
+    h3 {
+      color: $brand-color;
+    }
+  }
+  .tarj-prod {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 12px;
     width: 100%;
-    margin-top: 24px;
-    
-
-    .select-cat {
-        a {
-            text-decoration: none;
-        }
-
-        h3 {
-          color: $brand-color;
-        }
-    }
-
-    .tarj-prod {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        width:70%
-
-            
-    }
-
-    .items {
-        text-align: center;
-        margin:12px;
-
-        .nombre,
-        .precio {
-            display: block;
-        }
-
-        .precio {
-            color: $brand-color;
-            font-weight: 600;
-            font-size: 20px;
-        }
-    }
-}
-
-    hr {
-        height: 1px;
-        background: lightgray;
-        border: none;
-        margin: 0px 100px;
-    }
-  
-    
-  .footer-links {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    width: 100%;
-    padding: 24px;
-
-    .left-footer {
-        width: 240px;
-        padding: 24px;
-      }
-      
-      .delivery {
-        width: 100%;
-      }
-      
-      .central-footer {
-        width: auto;
-        padding: 24px;
-      }
-      
-      .right-footer {
-        padding: 24px;
-        width: auto;
-      }
-      
-      .list-enlaces {
-        list-style-type: none;
-      }
-      
-      
-      .redes-sociales h3,
-      .list-enlaces h3,
-      .info-links h3 {
-      color: $brand-color;
-      }
-      
   }
-  
-  
-  .footer-bottom {
-    background: $brand-color;
-    padding: 12px;
+
+  .items {
     text-align: center;
-    color: white;
-    font-weight: 500;
-  }
+    margin: 12px;
 
-  @media screen and (max-width: 768px) {
-
-    .barra {
-      input {
-        display: none;
+    .nombre,
+    .precio {
+      display: block;
     }
-  }  
 
-    .barra button {
-      display: none;
-    }
-    .contenedor {
+    .precio {
+      color: $brand-color;
+      font-weight: 600;
       font-size: 20px;
     }
+  }
+}
 
-    .banner {
-      padding: 0px;
-    }
+hr {
+  height: 1px;
+  background: lightgray;
+  border: none;
+  margin: 0px 100px;
+}
 
-    .tienda-box{
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  padding: 24px;
 
-      .tarj-prod {
-        width: 60%;
-      }
+  .left-footer {
+    width: 240px;
+    padding: 24px;
+  }
+
+  .delivery {
+    width: 100%;
+  }
+
+  .central-footer {
+    width: auto;
+    padding: 24px;
+  }
+
+  .right-footer {
+    padding: 24px;
+    width: auto;
+  }
+
+  .list-enlaces {
+    list-style-type: none;
+  }
+
+  .redes-sociales h3,
+  .list-enlaces h3,
+  .info-links h3 {
+    color: $brand-color;
+  }
+}
+
+.footer-bottom {
+  background: $brand-color;
+  padding: 12px;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .barra {
+    input {
+      display: none;
     }
   }
 
+  .barra button {
+    display: none;
+  }
+  .contenedor {
+    font-size: 20px;
+  }
+
+  .banner {
+    padding: 0px;
+  }
+
+  .tienda-box {
+    .tarj-prod {
+      width: 60%;
+    }
+  }
+}
