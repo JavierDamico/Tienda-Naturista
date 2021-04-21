@@ -1,87 +1,136 @@
-body {
-  font: 100% "Poppins", sans-serif;
-}
-body a {
-  color: black;
-  text-decoration: none;
-}
-body a:visited {
-  text-decoration: none;
-}
-body li {
-  list-style: none;
-}
-body input:focus,
-body select:focus,
-body textarea:focus,
-body button:focus {
-  outline: none;
-}
-
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:visited 
+{
+    text-decoration: none; 
+}
+
+
 #top-bar {
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #47da54;
+  background-color: #47DA54;
+ 
 }
-#top-bar .logo {
-  font-family: "Lobster", cursive;
+
+#top-bar .logo  {
+  font-family: 'Lobster', cursive;
   font-size: 70px;
   color: white;
   padding: 24px;
 }
+
 #top-bar .logo a {
   color: white;
 }
-#top-bar .barra {
+
+.barra {
   width: 45%;
 }
-#top-bar .barra input {
+.barra input {
   border-radius: 50px;
   border: none;
   width: 90%;
 }
-#top-bar .barra .carrito {
+
+.carrito {
   width: 15%;
+
 }
-#top-bar .barra .carrito img {
+
+.carrito img {
   width: 150%;
 }
-#top-bar .barra .searchbar {
+
+
+.searchbar {
   margin: 15px;
   size: 50;
   font-size: 18px;
   padding: 12px;
 }
-#top-bar .barra button {
+
+.barra button {
   margin: -60px;
   border: none;
   background: white;
   font-size: 1.5em;
 }
-#top-bar .barra form {
+
+.barra form {
   width: 100%;
 }
 
+.banner {
+  text-align: center;
+  background-image: url(../img/granos_varios_rec.jpg);
+  color: white;
+  padding: 120px;
+  background-size: cover;
+}
+
+.titulo-boton {
+  display: flex;
+  width: 100%;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.banner h1 {
+  font-size: 60px;
+  font-weight: 900;
+  margin: 64px;
+}
+.boton-comprar {
+  background: #47DA54;
+  padding: 12px 36px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 64px;
+  color: white;
+}
+
+
+/*comienzo barra menu*/
 .contenedor {
   display: flex;
   justify-content: space-around;
-  background-color: #47da54;
+  background-color: #47DA54;
   font-size: 22px;
+  
 }
+
 .contenedor a {
   color: white;
-  background-color: #47da54;
+  background-color: #47DA54;
+}
+
+.contenedor li {
+    background-color: #47DA54;
+
+}
+
+.contenedor a {
+  color: white;
+  background-color: #47DA54;
 }
 .contenedor li {
-  background-color: #47da54;
+  background-color: #47DA54;
 }
 .contenedor .navegacion ul {
   list-style: none;
@@ -112,38 +161,11 @@ body button:focus {
 .contenedor .menu li:hover .submenu {
   display: block;
 }
-.contenedor a:hover {
-  background-color: #3fbf3f;
-  border-radius: 50px;
-  transition: all 0.3s;
-}
 
-.banner {
-  text-align: center;
-  background-image: url(../img/granos_varios_rec.jpg);
-  color: white;
-  padding: 120px;
-  background-size: cover;
-}
-.banner .titulo-boton {
-  display: flex;
-  width: 100%;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-content: center;
-}
-.banner h1 {
-  font-size: 60px;
-  font-weight: 900;
-  margin: 64px;
-}
-.banner .boton-comprar {
-  background: #47da54;
-  padding: 12px 36px;
-  border: none;
-  border-radius: 10px;
-  margin-bottom: 64px;
-  color: white;
+.menu a:hover {
+  background-color: #3FBF3F;
+  border-radius: 50px;
+  transition: all .3s;
 }
 
 .beneficios {
@@ -151,20 +173,16 @@ body button:focus {
   justify-content: center;
   align-items: center;
   background: lightgray;
-  margin: 12px 0px;
+  margin: 12px 0px; 
   padding: 24px;
 }
-.beneficios .conteiner-tarj-benef {
+
+.conteiner-tarj-benef {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
   padding: 0px 12px;
-}
-.beneficios .conteiner-tarj-benef img {
-  width: 110%;
-}
-.beneficios .conteiner-tarj-benef .aside-box {
-  padding: 5px;
+
 }
 
 .destacados {
@@ -172,12 +190,15 @@ body button:focus {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 48px;
+  
 }
-.destacados .prod-destacado {
+
+.prod-destacado {
   text-align: center;
-  margin: 12px;
+  margin:12px;
 }
-.destacados .prod-destacado img {
+
+.prod-destacado img {
   box-shadow: gray 3px 3px 3px;
 }
 
@@ -188,6 +209,14 @@ hr {
   margin: 0px 100px;
 }
 
+.aside-box {
+  padding: 5px;
+}
+
+.conteiner-tarj-benef img {
+  width: 110%;
+}
+
 .footer-links {
   display: flex;
   justify-content: space-around;
@@ -195,39 +224,41 @@ hr {
   width: 100%;
   padding: 24px;
 }
-.footer-links .left-footer {
+
+.left-footer {
   width: 240px;
   padding: 24px;
 }
-.footer-links .left-footer .delivery {
+
+.delivery {
   width: 100%;
 }
-.footer-links .left-footer .redes-sociales h3 {
-  color: #47da54;
-}
-.footer-links .central-footer {
+
+.central-footer {
   width: auto;
   padding: 24px;
 }
-.footer-links .central-footer .list-enlaces {
-  list-style-type: none;
-}
-.footer-links .central-footer .info-links h3 {
-  color: #47da54;
-}
-.footer-links .right-footer {
+
+.right-footer {
   padding: 24px;
   width: auto;
 }
-.footer-links .right-footer .list-enlaces {
+
+.list-enlaces {
   list-style-type: none;
 }
-.footer-links .right-footer .info-links h3 {
-  color: #47da54;
+
+
+.redes-sociales h3 {
+color: #47DA54;
+}
+
+.info-links h3 {
+color: #47DA54;
 }
 
 .footer-bottom {
-  background: #47da54;
+  background: #47DA54;
   padding: 12px;
   text-align: center;
   color: white;
@@ -235,13 +266,12 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
+
   .barra input {
     display: none;
   }
-
+  
   .contenedor {
     font-size: 20px;
   }
 }
-
-/*# sourceMappingURL=index.css.map */

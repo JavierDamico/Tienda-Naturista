@@ -1,0 +1,12 @@
+.pay {
+  margin: 24px;
+}
+.pay h2 {
+  color: #47da54;
+  margin-top: 12px;
+}
+.pay .tarjetas img {
+  max-height: 48px;
+}
+
+/*# sourceMappingURL=medios-pago.css.map */
