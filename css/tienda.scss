@@ -228,6 +228,19 @@ body {
         }
     }
 }
+    .more {
+      display: flex;
+      justify-content: center;
+        .btn {
+          margin: 12px;
+          background: #47DA54;
+          border: none;
+          padding: 12px;
+          border-radius: 20px;
+          color: white;
+          font-size: 16px;
+        }
+    }
 
     hr {
         height: 1px;
